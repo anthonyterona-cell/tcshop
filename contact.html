@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Clothing Brand</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #222;
+      padding: 10px 30px;
+      color: #fff;
+    }
+    .site-header .logo img {
+      height: 50px;
+    }
+    .site-header .search input {
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .navbar {
+      background: #444;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .navbar a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .navbar a:hover, .navbar a.active {
+      background: #f4a300;
+      color: #fff;
+    }
+
+    main.contact-page {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 45%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .btn {
+      background: #f4a300;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #222;
+    }
+
+    .contact-info h2 {
+      margin-top: 0;
+      color: #f4a300;
+    }
+
+    footer.site-footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    .footer-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .footer-icons a:hover {
+      color: #f4a300;
+    }
+
+    @media(max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+      .contact-form, .contact-info {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo"><img src="images/logo.png" alt="Logo"></div>
+    <div class="search"><input type="text" placeholder="Search..."></div>
+    <div class="cart">🛒</div>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="featured.html">Featured</a>
+    <a href="contact.html" class="active">Contact Us</a>
+  </nav>
+
+  <!-- CONTACT SECTION -->
+  <main class="contact-page">
+    <section class="contact-header">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Whether you have questions, feedback, or special requests — our team is ready to assist.</p>
+    </section>
+
+    <section class="contact-container">
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p><strong>Address:</strong> Lopez Drive Matiao, Davao Oriental, Philippines</p>
+        <p><strong>Phone:</strong> +63 9655291473</p>
+        <p><strong>Email:</strong> tcshop@gmail.com</p>
+
+        <h2>Business Hours</h2>
+        <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
+        <p>Saturday: 10:00 AM – 4:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Follow us on:</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 TC Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

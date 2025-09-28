@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Clothing Brand</title>
+
+  <!-- ✅ Inline CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Poppins, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+    }
+
+    /* HEADER */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #222;
+      color: white;
+      padding: 10px 30px;
+    }
+    .site-header .logo img {
+      width: 60px;
+      height: auto;
+    }
+    .site-header .search input {
+      padding: 5px 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: none;
+    }
+    .site-header .cart {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #333;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      padding: 10px 15px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .navbar a:hover {
+      background: #ffcc00;
+      color: #111;
+      border-radius: 6px;
+    }
+
+    /* SERVICES PAGE */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem 5%;
+      justify-items: center;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .service-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1rem;
+      border: 4px solid #f3f3f3;
+    }
+    .service-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Button */
+    .service-card .btn {
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 1rem;
+      align-self: center;
+      transition: all 0.3s ease;
+    }
+    .service-card .btn:hover {
+      background-color: #e63946;
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    .footer-icons a {
+      color: #fff;
+      margin: 0 8px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    .footer-icons a:hover {
+      color: #ffcc00;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo"><img src="images/logo.png" alt="Logo"></div>
+    <div class="search"><input type="text" placeholder="Search..."></div>
+    <div class="cart">🛒</div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="products.html">Products</a>
+    <a href="featured.html">Featured</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-grid">
+
+    <!-- SERVICE 1 -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="images/custom.jpg" alt="Custom Apparel Design">
+      </div>
+      <h2>Custom Apparel Design</h2>
+      <p>Creating personalized clothing styles based on customer preferences.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <!-- SERVICE 2 -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="images/deliver.jpg" alt="Online Shopping & Delivery">
+      </div>
+      <h2>Online Shopping & Delivery</h2>
+      <p>Convenient e-commerce platform with nationwide shipping options.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <!-- SERVICE 3 -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="images/retail.jpg" alt="Retail Clothing Sales">
+      </div>
+      <h2>Retail Clothing Sales</h2>
+      <p>Offering ready-to-wear fashion items in-store and online.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <!-- SERVICE 4 -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="images/styling.jpg" alt="Styling Assistance">
+      </div>
+      <h2>Styling Assistance</h2>
+      <p>Giving customers fashion advice and outfit coordination services.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Follow us on:</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 TC Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
